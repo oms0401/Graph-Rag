@@ -36,7 +36,7 @@ The MOSDAC Graph RAG Assistant follows a multi-stage architecture that combines 
 
 ### Architecture Overview
 
-![System Architecture](path/to/system-architecture-diagram.png)
+![System Architecture](https://github.com/oms0401/Graph-Rag/blob/e8054233d327f845e1c1774c3902ea3cb5e911ef/graphrag%20system%20design.png)
 
 ```
 Raw Markdown Data → NER & Relationship Extraction → Cypher Generation → Neo4j Graph Database → Graph RAG Querying → Natural Language Response
