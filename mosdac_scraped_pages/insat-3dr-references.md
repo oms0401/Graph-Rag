@@ -1,0 +1,10 @@
+# INSAT-3DR References
+[Product Format Compatability with COTS package ![](https://mosdac.gov.in/images/PDF.gif)](https://mosdac.gov.in/docs/INSAT3D_COTS.pdf "The pdf file open in new window.") (Size:796 KB Format:PDF Tool:PDFViewer)
+[ATBD Document![](https://mosdac.gov.in/images/PDF.gif)](https://mosdac.gov.in/docs/INSAT_3D_ATBD_MAY_2015.pdf "The pdf file open in new window.") (Size:9.8 MB Format:PDF Tool:PDFViewer)
+[Revised ATBD Document for SST![](https://mosdac.gov.in/images/PDF.gif)](https://mosdac.gov.in/docs/ATBD_INSAT-3D_SST_REV_V1.1.pdf "The pdf file open in new window.") (Size:1.4 MB Format:PDF Tool:PDFViewer)
+[Incremental ATBD Document![](https://mosdac.gov.in/images/PDF.gif)](https://mosdac.gov.in/docs/Incremental-ATBD-12Feb2020.pdf "The pdf file open in new window.") (Size:5.2 MB Format:PDF Tool:PDFViewer)
+[Format Document ![](https://mosdac.gov.in/images/PDF.gif)](https://mosdac.gov.in/docs/INSAT3D_Products.pdf "The pdf file open in new window.") (Size:903 KB Format:PDF Tool:PDFViewer)
+[Product Catalogue ![](https://mosdac.gov.in/images/PDF.gif)](https://mosdac.gov.in/docs/V1_INSAT3D_ProductTypes%20and%20ProcessingLevel.pdf "The pdf file open in new window.") (Size:229 KB Format:PDF Tool:PDFViewer)
+[INSAT Product Version Information](https://mosdac.gov.in/docs/INSAT_Product_Version_information_V01.pdf) (Size:1.61 MB Format: PDF Tool : PDFViewer) 
+[ATBD_HEM_rain_revised](https://mosdac.gov.in/docs/HEM_rain-revised-atbd.pdf) (Size:2.14 MB Format: PDF Tool : PDFViewer) 
+[Revised ATBD for AOD](https://mosdac.gov.in/docs/INSAT_AOD_ATBD_revised.doc.pdf) (Size:296KB Format: PDF Tool : PDFViewer)

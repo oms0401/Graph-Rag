@@ -1,0 +1,2 @@
+# SCATSAT-1 References
+[SCATSAT Level4 Products ![](https://mosdac.gov.in/images/PDF.gif)](https://mosdac.gov.in/docs/scatsat_level4_dataproducts.pdf "The pdf file open in new window.") (Size:968 KB Format:PDF Tool:PDFViewer)

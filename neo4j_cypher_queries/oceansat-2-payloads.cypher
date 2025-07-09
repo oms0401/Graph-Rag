@@ -1,0 +1,27 @@
+MERGE (s:Satellite {name: 'Oceansat-2'})
+MERGE (ocm:Instrument {name: 'Ocean Colour Monitor', type: 'multi-spectral camera'})
+MERGE (scat:Instrument {name: 'Scanning Scatterometer', type: 'active microwave device'})
+MERGE (rosa:Instrument {name: 'Radio Occultation Sounder for Atmospheric Studies', type: 'GPS occultation receiver'})
+MERGE (org_ind:Organization {name: 'ISRO'})
+MERGE (org_ita:Organization {name: 'Italian Space Agency'})
+
+MERGE (s)-[:HAS_PAYLOAD]->(ocm)
+MERGE (s)-[:HAS_PAYLOAD]->(scat)
+MERGE (s)-[:HAS_PAYLOAD]->(rosa)
+
+MERGE (ocm)-[:DEVELOPED_BY]->(org_ind)
+MERGE (scat)-[:DEVELOPED_BY]->(org_ind)
+MERGE (rosa)-[:DEVELOPED_BY]->(org_ita)
+
+MERGE (ocm)-[:HAS_PROPERTY]->(fov:Property {name: 'instantaneous geometric field of view', value_m: 360})
+MERGE (ocm)-[:HAS_PROPERTY]->(swath:Property {name: 'swath', value_km: 1420})
+MERGE (ocm)-[:HAS_PROPERTY]->(tilt:Property {name: 'tilt angle', value_deg: 20})
+
+MERGE (scat)-[:HAS_PROPERTY]->(dish_diameter:Property {name: 'parabolic dish antenna diameter', value_m: 1})
+MERGE (scat)-[:HAS_PROPERTY]->(ground_resolution:Property {name: 'ground resolution cell size', value: '50 x 50 km'})
+MERGE (scat)-[:HAS_PROPERTY]->(frequency:Property {name: 'operating frequency', value_GHz: 13.515})
+MERGE (scat)-[:HAS_PROPERTY]->(inner_incidence_angle:Property {name: 'inner beam incidence angle', value_deg: 48.9})
+MERGE (scat)-[:HAS_PROPERTY]->(outer_incidence_angle:Property {name: 'outer beam incidence angle', value_deg: 57.6})
+MERGE (scat)-[:HAS_PROPERTY]->(inner_swath:Property {name: 'inner beam swath', value_km: 1400})
+MERGE (scat)-[:HAS_PROPERTY]->(outer_swath:Property {name: 'outer beam swath', value_km: 1840})
+MERGE (scat)-[:HAS_PROPERTY]->(revisit_time:Property {name: 'revisit time', value_days: 2})

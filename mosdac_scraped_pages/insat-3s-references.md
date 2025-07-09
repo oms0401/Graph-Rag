@@ -1,0 +1,2 @@
+# INSAT-3DS References
+[INSAT-3DS_Operational_Products_V1 ![](https://mosdac.gov.in/images/PDF.gif)](https://mosdac.gov.in/docs/INSAT-3DS_Operational_Products_V1.pdf "The pdf file open in new window.") (Size:586 KB Format:PDF Tool:PDFViewer)

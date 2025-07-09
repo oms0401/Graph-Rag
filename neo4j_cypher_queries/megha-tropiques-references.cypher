@@ -1,0 +1,5 @@
+MERGE (madras:DataProduct {name: 'MADRAS L1', size_mb: 2.2, format: 'PDF', tool: 'PDFViewer', url: 'https://mosdac.gov.in/docs/MADRAS_L1.pdf'})
+MERGE (saphir:DataProduct {name: 'SAPHIR L1', size_mb: 1.6, format: 'PDF', tool: 'PDFViewer', url: 'https://mosdac.gov.in/docs/SAPHIR_L1.pdf'})
+MERGE (scarab:DataProduct {name: 'SCARAB L1', size_mb: 1.8, format: 'PDF', tool: 'PDFViewer', url: 'https://mosdac.gov.in/docs/SCARAB_L1.pdf'})
+MERGE (atbd_saphir:DataProduct {name: 'ATBD-for-saphir-rain-ver2', size_mb: 1.3, format: 'PDF', tool: 'PDFViewer', url: 'https://mosdac.gov.in/docs/ATBD-for-saphir-rain-ver2.pdf'})
+MERGE (mt_atbd:DataProduct {name: 'MT_ATBD_ver3', size_mb: 1.7, format: 'PDF', tool: 'PDFViewer', url: 'https://mosdac.gov.in/docs/MT_ATBD_ver3_Final2.pdf'})

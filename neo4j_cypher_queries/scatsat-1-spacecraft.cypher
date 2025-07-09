@@ -1,0 +1,18 @@
+MERGE (s:Spacecraft {name: 'SCATSAT-1'})
+SET s.operational_services = 'continuity of operational services of OSCAT (IRS-P4)',
+    s.application_potential = 'enhanced',
+    s.launch_date = '2016-09-26',
+    s.launch_site = 'SDSC (Satish Dhawan Space Centre), Sriharikota',
+    s.launch_vehicle = 'PSLV - C35',
+    s.orbit_type = 'Sun Synchronous',
+    s.orbit_description = 'dawn-dusk orbit',
+    s.altitude_km = 720,
+    s.inclination_deg = 97.4,
+    s.local_time_ascending_node = '6:00 hours',
+    s.repetitivity_days = 2,
+    s.payloads = 'Scatterometer',
+    s.mass_at_lift_off_kg = 310,
+    s.power_generation_watts = 1360,
+    s.solar_panel_area_sq_m = 15,
+    s.battery_type = 'Two 24 Ah Ni-Cd Batteries',
+    s.mission_life_years = 5;

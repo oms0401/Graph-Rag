@@ -1,0 +1,16 @@
+MERGE (insat:SatelliteSystem {name: 'INSAT', type: 'Indian National Satellite System', purpose: 'multipurpose'})
+MERGE (org:Organization {name: 'ISRO'})
+MERGE (region:Location {name: 'Asia Pacific Region', type: 'Geographic'})
+MERGE (program:Program {name: 'COSPAR-Sarsat', type: 'Search and Rescue'})
+MERGE (objective:Objective {description: 'operational, environmental and storm warning system'})
+MERGE (satellite:Satellite {name: 'INSAT-3DR', type: 'Geo-stationary'})
+
+MERGE (insat)-[:LAUNCHED_BY]->(org)
+MERGE (insat)-[:SATISFIES_NEEDS]->(region)
+MERGE (insat)-[:INCORPORATES]->(program)
+MERGE (insat)-[:HAS_OBJECTIVE]->(objective)
+MERGE (satellite)-[:PART_OF]->(insat)
+MERGE (satellite)-[:MONITORS]->(phen:Phenomenon {name: 'earth surface'})
+MERGE (satellite)-[:CARRIES_OUT]->(obs:Observation {type: 'oceanic observations'})
+MERGE (satellite)-[:PROVIDES]->(data:DataProduct {name: 'data dissemination capabilities'})
+MERGE (satellite)-[:PROVIDES_SERVICE]->(bss:Service {name: 'Broadcast Satellite Services', type: 'BSS', band: 'S-band', transponders_count: 2});

@@ -1,0 +1,41 @@
+MERGE (p:Payload {name: 'SCATSAT-1 Payloads'})
+MERGE (scat:Instrument {name: 'Scanning Scatterometer (SCAT)', type: 'active microwave'})
+MERGE (org:Organization {name: 'SAC/ISRO', location: 'Ahmedabad'})
+MERGE (s:Satellite {name: 'SCATSAT-1'})
+
+MERGE (p)-[:CONTAINS_INSTRUMENT]->(scat)
+MERGE (scat)-[:DEVELOPED_AT]->(org)
+MERGE (s)-[:HAS_PAYLOAD]->(p);
+
+MERGE (param:Parameter {name: 'ocean surface level wind vectors', type: 'Oceanographic'})
+MERGE (scat)-[:USED_FOR]->(param);
+
+MERGE (orbital_altitude:Property {name: 'orbital altitude', value_km: 720})
+MERGE (frequency:Property {name: 'instrument frequency', value: 13.515, unit: 'GHz'})
+MERGE (wind_speed_range:Property {name: 'wind speed range', value: '3-30', unit: 'm/s'})
+MERGE (wind_speed_accuracy:Property {name: 'wind speed accuracy', value: 1.8, unit: 'm/s (rms)'})
+MERGE (wind_direction_range:Property {name: 'wind direction', value: '0 to 360', unit: 'degrees'})
+MERGE (wind_direction_accuracy:Property {name: 'wind direction accuracy', value: 200, unit: 'rms'})
+MERGE (resolution:Property {name: 'wind vector cell size', value: '25 x 25', unit: 'km grid'})
+MERGE (polarization_inner:Property {name: 'polarization inner beam', value: 'HH'})
+MERGE (polarization_outer:Property {name: 'polarization outer beam', value: 'VV'})
+MERGE (swath_width_inner:Property {name: 'swath width inner beam', value_km: 1400})
+MERGE (swath_width_outer:Property {name: 'swath width outer beam', value_km: 1840})
+MERGE (scanning_circle_radius_inner:Property {name: 'scanning circle radius inner beam', value_km: 700})
+MERGE (scanning_circle_radius_outer:Property {name: 'scanning circle radius outer beam', value_km: 920})
+MERGE (scanning_rate:Property {name: 'scanning rate', value: 20.5, unit: 'rpm'})
+
+MERGE (scat)-[:HAS_PROPERTY]->(orbital_altitude)
+MERGE (scat)-[:HAS_PROPERTY]->(frequency)
+MERGE (scat)-[:HAS_PROPERTY]->(wind_speed_range)
+MERGE (scat)-[:HAS_PROPERTY]->(wind_speed_accuracy)
+MERGE (scat)-[:HAS_PROPERTY]->(wind_direction_range)
+MERGE (scat)-[:HAS_PROPERTY]->(wind_direction_accuracy)
+MERGE (scat)-[:HAS_PROPERTY]->(resolution)
+MERGE (scat)-[:HAS_PROPERTY]->(polarization_inner)
+MERGE (scat)-[:HAS_PROPERTY]->(polarization_outer)
+MERGE (scat)-[:HAS_PROPERTY]->(swath_width_inner)
+MERGE (scat)-[:HAS_PROPERTY]->(swath_width_outer)
+MERGE (scat)-[:HAS_PROPERTY]->(scanning_circle_radius_inner)
+MERGE (scat)-[:HAS_PROPERTY]->(scanning_circle_radius_outer)
+MERGE (scat)-[:HAS_PROPERTY]->(scanning_rate);

@@ -1,0 +1,3 @@
+# SARAL References
+[SARAL Products Handbook ![](https://mosdac.gov.in/images/PDF.gif)](https://mosdac.gov.in/docs/SALP-MU-M-OP-15984-CN_0102\[1\]_handbook.pdf "The pdf file open in new window.") (Size:5.6 MB Format:PDF Tool:PDFViewer)
+[SARAL User Products ![](https://mosdac.gov.in/images/PDF.gif)](https://mosdac.gov.in/docs/SALP-ST-M-EA-15839-CN_0202\[1\]_vol20_products.pdf "The pdf file open in new window.") (Size:957 KB Format:PDF Tool:PDFViewer)

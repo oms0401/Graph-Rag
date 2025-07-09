@@ -1,0 +1,25 @@
+MERGE (s:Satellite {name: 'OCEANSAT-3'})
+MERGE (obj1:Objectives {description: 'Ensure data continuity of Ocean colour and wind vector data', type: 'Operational'})
+MERGE (obj2:Objectives {description: 'Improve applications with additional datasets', type: 'Enhancement'})
+MERGE (obj3:Objectives {description: 'Develop/improve related algorithms and data products', type: 'Development'})
+
+MERGE (param_oc:Parameter {name: 'Ocean colour', type: 'Oceanographic'})
+MERGE (param_wv:Parameter {name: 'wind vector', type: 'Oceanographic'})
+MERGE (param_sst:Parameter {name: 'Sea Surface Temperature', type: 'Oceanographic'})
+MERGE (param_fluorescence:Parameter {name: 'fluorescence', type: 'Optical'})
+MERGE (param_ir:Parameter {name: 'Infrared', type: 'Atmospheric'})
+
+MERGE (s)-[:HAS_OBJECTIVE]->(obj1)
+MERGE (s)-[:HAS_OBJECTIVE]->(obj2)
+MERGE (s)-[:HAS_OBJECTIVE]->(obj3)
+
+MERGE (obj1)-[:ENSURES_DATA_CONTINUITY]->(param_oc)
+MERGE (obj1)-[:ENSURES_DATA_CONTINUITY]->(param_wv)
+MERGE (obj2)-[:ACCOMMODATES_DATASET]->(param_sst)
+MERGE (obj2)-[:ACCOMMODATES_DATASET]->(param_fluorescence)
+MERGE (obj2)-[:ACCOMMODATES_DATASET]->(param_ir)
+MERGE (obj3)-[:DEVELOPS]->(param_oc)
+MERGE (obj3)-[:DEVELOPS]->(param_wv)
+MERGE (obj3)-[:DEVELOPS]->(param_sst)
+MERGE (obj3)-[:DEVELOPS]->(param_fluorescence)
+MERGE (obj3)-[:DEVELOPS]->(param_ir);
